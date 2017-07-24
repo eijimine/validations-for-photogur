@@ -11,7 +11,7 @@ class PicturesController < ApplicationController
   end
 
   def by_year
-    puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ #{params[:q]}"
+  
       @selected_year = Picture.pictures_created_in_year(params[:q])
 
 
